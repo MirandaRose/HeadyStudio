@@ -23,7 +23,21 @@ namespace HeadyStudio
                 $"Clear Rod 14mm: {UserAccount.ClearRod14mm}, " +
                 $"Aqua Azul Rod: {UserAccount.AquaAzulRod}");
 
+
+
             var UserAccount2 = new UserAccount();
+
+            UserAccount2.Deposit3mm(55);
+            UserAccount2.Deposit14mm(18);
+            UserAccount2.DepositAqua(6);
+
+            Console.WriteLine($"Email Address: {UserAccount2.AccountNumber}," +
+                $"Account Number:: {UserAccount2.AccountNumber}," +
+                $"CreatedDate: {UserAccount2.DateCreated}," +
+                $"Clear Rod 3mm: {UserAccount2.ClearRod3mm}," +
+                $"Clear Rod 14mm: {UserAccount2.ClearRod14mm}," +
+                $"Aqua Azul Rod: {UserAccount2.AquaAzulRod}");
+
 
 
 

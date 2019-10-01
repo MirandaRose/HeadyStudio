@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs/HeadyStudio
+/HeadyStudio/bin/Debug/netcoreapp2.1
+/HeadyStudio/obj

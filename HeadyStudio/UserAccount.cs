@@ -47,21 +47,59 @@ namespace HeadyStudio
 
         #region Methods
 
+        /// <summary>
+        /// Enter quantity of 3mm Clear Rod into the studio
+        /// </summary>
+        /// <param name="amount">Quantity of 3mm Clear Rod</param>
         public void Deposit3mm (int amount)
         {
             ClearRod3mm +=amount;
         }
 
+        /// <summary>
+        /// Enter quantity of 14mm Clear Rod into the studio
+        /// </summary>
+        /// <param name="amount">Quantity of 14mm Clear Rod</param>
         public void Deposit14mm (int amount)
         {
             ClearRod14mm += amount;
         }
 
+        /// <summary>
+        /// Enter quantity of AquaAzul Rod into the studio
+        /// </summary>
+        /// <param name="amount">Quantity of AquaAzul Rod</param>
         public void DepositAqua (int amount)
         {
             AquaAzulRod += amount;
         }
 
+        /// <summary>
+        /// Enter quantity of 3mm Clear Rod used in the studio
+        /// </summary>
+        /// <param name="amount">Quantity of 3mm Rod used</param>
+        public void Withdrawl3mm(int amount)
+        {
+            ClearRod3mm -= amount;
+        }
+
+        /// <summary>
+        /// Enter quantity of 14mm Clear Rod used in the studio
+        /// </summary>
+        /// <param name="amount">Quantity of 14mm Rod used</param>
+        public void Withdrawl4mm(int amount)
+        {
+            ClearRod14mm -= amount;
+        }
+
+        /// <summary>
+        /// Enter quantity of AquaAuzl Rod used in the studio
+        /// </summary>
+        /// <param name="amount">Quantity of AquaAzul Rod used</param>
+        public void WithdrawlAqua(int amount)
+        {
+            AquaAzulRod -= amount;
+        }
         #endregion
     }
 }
