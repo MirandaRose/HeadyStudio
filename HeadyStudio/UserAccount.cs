@@ -3,9 +3,33 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace HeadyStudio
-{
+{ 
+    enum ClearRodSizes
+    {
+        4mmClear,
+        6mmClear,
+        7mmClear
+    }
+
+    enum ClearTubingSizes
+    { 
+        12x2.5mm, 
+        9x1.5mm, 
+        25x4mm
+    }
+
+    enum ColoredRods
+    {
+        OG Moss,
+        Blue Satin,
+        Purple Lollipop
+    }
     class UserAccount
     {
+
+
+
+
         private static int LastUserAccountNumber = 0;
 
         #region UserAccountProperties
@@ -24,11 +48,10 @@ namespace HeadyStudio
         /// <summary>
         /// Quantity of 3mm clear rods
         /// </summary>
-        public int ClearRod3mm { get; set; }
+        public ClearRodSizes ClearRods { get; set; }
         /// <summary>
         /// Quantity of 14mm clear rods
         /// </summary>
-
         public int ClearRod14mm { get; set; }
         /// <summary>
         /// Quantity of AquaAzul rods
