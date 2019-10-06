@@ -6,30 +6,29 @@ namespace HeadyStudio
 { 
     enum ClearRodSizes
     {
-        4mmClear,
-        6mmClear,
-        7mmClear
+        ClearRod4mm,
+        ClearRod6mm,
+        ClearRod7mm
     }
 
     enum ClearTubingSizes
     { 
-        12x2.5mm, 
-        9x1.5mm, 
-        25x4mm
+        TubeMedium12mm, 
+        TubeMedium9mm, 
+        TubeMedium25mm
     }
 
-    enum ColoredRods
+    enum ColoredRodsColors
     {
-        OG Moss,
-        Blue Satin,
-        Purple Lollipop
+        AquaAzul,
+        OGMoss,
+        BlueSatin,
+        PurpleLollipop
     }
     class UserAccount
     {
 
-
-
-
+        
         private static int LastUserAccountNumber = 0;
 
         #region UserAccountProperties
@@ -46,17 +45,17 @@ namespace HeadyStudio
         /// </summary>
         public DateTime DateCreated { get; }
         /// <summary>
-        /// Quantity of 3mm clear rods
+        /// Sizes of clear rod
         /// </summary>
         public ClearRodSizes ClearRods { get; set; }
         /// <summary>
-        /// Quantity of 14mm clear rods
+        /// Sizes of clear tubing
         /// </summary>
-        public int ClearRod14mm { get; set; }
+        public ClearTubingSizes ClearTubing { get; set; }
         /// <summary>
-        /// Quantity of AquaAzul rods
+        /// Colored rods
         /// </summary>
-        public int AquaAzulRod { get; set; }
+        public ColoredRodsColors ColoredRods { get; set; }
         #endregion
 
         #region Contrustor
@@ -76,7 +75,7 @@ namespace HeadyStudio
         /// <param name="amount">Quantity of 3mm Clear Rod</param>
         public void Deposit3mm (int amount)
         {
-            ClearRod3mm +=amount;
+            ClearRodSizes.ClearRod4mm 
         }
 
         /// <summary>

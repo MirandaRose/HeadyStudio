@@ -19,7 +19,7 @@ namespace HeadyStudio
             Console.WriteLine($"EmailAddress: {UserAccount.EmailAddress}, " +
                 $"Account Number: {UserAccount.AccountNumber}, " +
                 $"CreatedDate: {UserAccount.DateCreated}, " +
-                $"Clear Rod 3mm: {UserAccount.ClearRod3mm}, " +
+                $"Clear Rod: {UserAccount.ClearRod4mm}, " +
                 $"Clear Rod 14mm: {UserAccount.ClearRod14mm}, " +
                 $"Aqua Azul Rod: {UserAccount.AquaAzulRod}");
 
