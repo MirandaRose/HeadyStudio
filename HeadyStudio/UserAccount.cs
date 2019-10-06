@@ -4,6 +4,7 @@ using System.Text;
 
 namespace HeadyStudio
 { 
+    {
     enum ClearRodSizes
     {
         ClearRod4mm,
@@ -12,9 +13,9 @@ namespace HeadyStudio
     }
 
     enum ClearTubingSizes
-    { 
-        TubeMedium12mm, 
-        TubeMedium9mm, 
+    {
+        TubeMedium12mm,
+        TubeMedium9mm,
         TubeMedium25mm
     }
 
@@ -28,7 +29,7 @@ namespace HeadyStudio
     class UserAccount
     {
 
-        
+
         private static int LastUserAccountNumber = 0;
 
         #region UserAccountProperties
@@ -58,7 +59,7 @@ namespace HeadyStudio
         public ColoredRodsColors ColoredRods { get; set; }
         #endregion
 
-        #region Contrustor
+        #region Contructor
         public UserAccount()
         {
             AccountNumber = ++LastUserAccountNumber;
@@ -70,58 +71,59 @@ namespace HeadyStudio
         #region Methods
 
         /// <summary>
-        /// Enter quantity of 3mm Clear Rod into the studio
+        /// Enter quantity of 4mm Clear Rod into the studio
         /// </summary>
         /// <param name="amount">Quantity of 3mm Clear Rod</param>
-        public void Deposit3mm (int amount)
+        public void Deposit4mm(int amount)
         {
-            ClearRodSizes.ClearRod4mm 
+            enum ClearRodSizes.ClearRod4mm += amount;
         }
 
-        /// <summary>
-        /// Enter quantity of 14mm Clear Rod into the studio
-        /// </summary>
-        /// <param name="amount">Quantity of 14mm Clear Rod</param>
-        public void Deposit14mm (int amount)
-        {
-            ClearRod14mm += amount;
-        }
-
-        /// <summary>
-        /// Enter quantity of AquaAzul Rod into the studio
-        /// </summary>
-        /// <param name="amount">Quantity of AquaAzul Rod</param>
-        public void DepositAqua (int amount)
-        {
-            AquaAzulRod += amount;
-        }
-
-        /// <summary>
-        /// Enter quantity of 3mm Clear Rod used in the studio
-        /// </summary>
-        /// <param name="amount">Quantity of 3mm Rod used</param>
-        public void Withdrawl3mm(int amount)
-        {
-            ClearRod3mm -= amount;
-        }
-
-        /// <summary>
-        /// Enter quantity of 14mm Clear Rod used in the studio
-        /// </summary>
-        /// <param name="amount">Quantity of 14mm Rod used</param>
-        public void Withdrawl4mm(int amount)
-        {
-            ClearRod14mm -= amount;
-        }
-
-        /// <summary>
-        /// Enter quantity of AquaAuzl Rod used in the studio
-        /// </summary>
-        /// <param name="amount">Quantity of AquaAzul Rod used</param>
-        public void WithdrawlAqua(int amount)
-        {
-            AquaAzulRod -= amount;
-        }
-        #endregion
+    /// <summary>
+    /// Enter quantity of 14mm Clear Rod into the studio
+    /// </summary>
+    /// <param name="amount">Quantity of 14mm Clear Rod</param>
+    public void ClearRod14mm(int amount)
+    {
+        ClearRodSizes. += ClearRodamount;
     }
+
+    /// <summary>
+    /// Enter quantity of AquaAzul Rod into the studio
+    /// </summary>
+    /// <param name="amount">Quantity of AquaAzul Rod</param>
+    public void DepositAqua(int amount)
+    {
+        AquaAzulRod += amount;
+    }
+
+    /// <summary>
+    /// Enter quantity of 3mm Clear Rod used in the studio
+    /// </summary>
+    /// <param name="amount">Quantity of 3mm Rod used</param>
+    public void Withdrawl3mm(int amount)
+    {
+        ClearRod3mm -= amount;
+    }
+
+    /// <summary>
+    /// Enter quantity of 14mm Clear Rod used in the studio
+    /// </summary>
+    /// <param name="amount">Quantity of 14mm Rod used</param>
+    public void Withdrawl4mm(int amount)
+    {
+        ClearRod14mm -= amount;
+    }
+
+    /// <summary>
+    /// Enter quantity of AquaAuzl Rod used in the studio
+    /// </summary>
+    /// <param name="amount">Quantity of AquaAzul Rod used</param>
+    public void WithdrawlAqua(int amount)
+    {
+        AquaAzulRod -= amount;
+    }
+}
+    #endregion
+}
 }

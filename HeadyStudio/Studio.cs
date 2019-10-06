@@ -4,11 +4,11 @@ using System.Text;
 
 namespace HeadyStudio
 {
-    class HeadyStudio
+    static class HeadyStudio
     {
        class Studio
         {
-            public 
+            private static List<> 
         }
     }
 }
